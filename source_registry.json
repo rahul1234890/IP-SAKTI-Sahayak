@@ -1,0 +1,773 @@
+{
+  "database": {
+    "name": "IP-SAKTI Sahayak Authoritative Source Registry",
+    "version": "3.0",
+    "description": "Curated authoritative sources for intellectual property, Ayurveda, AYUSH, traditional knowledge, biodiversity, regulatory classification, product regulation and international protection.",
+    "last_verified": "2026-09-09"
+  },
+
+  "source_policy": {
+    "primary_focus": "Official government, statutory authority and international organization sources.",
+    "use_for_rag": "Only sources explicitly marked true should be used as evidence sources.",
+    "verification_required": true,
+    "restricted_sources_must_not_be_presented_as_retrieved_evidence": true,
+    "jurisdiction_must_be_respected": true,
+    "international_sources_do_not_replace_national_law": true,
+    "legal_disclaimer": "IP-SAKTI Sahayak provides educational and decision-support information only and is not a substitute for professional legal or regulatory advice."
+  },
+
+  "sources": [
+
+    {
+      "source_id": "IND_IP_PATENTS",
+      "id": "IND_IP_PATENTS",
+      "title": "Indian Patent Office",
+      "document": "Indian Patent Office",
+      "authority": "Indian Patent Office",
+      "organization": "Office of the Controller General of Patents, Designs and Trade Marks",
+      "jurisdiction": "India",
+      "category": "Patents",
+      "authority_level": "primary",
+      "official_url": "https://ipindia.gov.in/",
+      "url": "https://ipindia.gov.in/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "patent",
+        "patentability",
+        "traditional knowledge",
+        "biological material",
+        "patent guidelines"
+      ]
+    },
+
+    {
+      "source_id": "IND_PATENTS_ACT",
+      "id": "IND_PATENTS_ACT",
+      "title": "The Patents Act, 1970",
+      "document": "The Patents Act, 1970",
+      "authority": "Government of India",
+      "organization": "India Code / Indian Patent Office",
+      "jurisdiction": "India",
+      "category": "Patents",
+      "authority_level": "primary",
+      "official_url": "https://ipindia.gov.in/acts/patent-act-1970",
+      "url": "https://ipindia.gov.in/acts/patent-act-1970",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "patent",
+        "patentability",
+        "novelty",
+        "inventive step",
+        "industrial applicability",
+        "prior art",
+        "exclusions"
+      ]
+    },
+
+    {
+      "source_id": "IND_TK_BIO_PATENT_GUIDELINES",
+      "id": "IND_TK_BIO_PATENT_GUIDELINES",
+      "title": "Guidelines for Processing of Patent Applications relating to Traditional Knowledge and Biological Material",
+      "document": "Guidelines for Processing of Patent Applications relating to Traditional Knowledge and Biological Material - 2012",
+      "authority": "Indian Patent Office",
+      "organization": "Office of the Controller General of Patents, Designs and Trade Marks",
+      "jurisdiction": "India",
+      "category": "Traditional Knowledge",
+      "authority_level": "official_guidance",
+      "official_url": "https://ipindia.gov.in/writereaddata/portal/ipoguidelinesmanuals/1_39_1_5-tk-guidelines.pdf",
+      "url": "https://ipindia.gov.in/writereaddata/portal/ipoguidelinesmanuals/1_39_1_5-tk-guidelines.pdf",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "traditional knowledge",
+        "biological material",
+        "TKDL",
+        "patent examination",
+        "patentability"
+      ]
+    },
+
+    {
+      "source_id": "TKDL_OFFICIAL",
+      "id": "TKDL_OFFICIAL",
+      "title": "Traditional Knowledge Digital Library",
+      "document": "Traditional Knowledge Digital Library Official Information",
+      "authority": "Government of India",
+      "organization": "CSIR - Traditional Knowledge Digital Library",
+      "jurisdiction": "India",
+      "category": "Traditional Knowledge",
+      "authority_level": "primary",
+      "official_url": "https://www.tkdl.res.in/",
+      "url": "https://www.tkdl.res.in/",
+      "access": "restricted",
+      "use_for_rag": false,
+      "topics": [
+        "traditional knowledge",
+        "Ayurveda",
+        "Siddha",
+        "Unani",
+        "Yoga",
+        "TKDL"
+      ],
+      "notes": "The full TKDL database is restricted. IP-SAKTI must not claim direct access to restricted TKDL records."
+    },
+
+    {
+      "source_id": "TKDL_SOURCE_INFORMATION",
+      "id": "TKDL_SOURCE_INFORMATION",
+      "title": "TKDL Source Information",
+      "document": "TKDL Source Information",
+      "authority": "Government of India",
+      "organization": "Traditional Knowledge Digital Library",
+      "jurisdiction": "India",
+      "category": "Traditional Knowledge",
+      "authority_level": "primary",
+      "official_url": "https://www.tkdl.res.in/tkdl/langdefault/common/SourceInfo.asp?GL=Eng",
+      "url": "https://www.tkdl.res.in/tkdl/langdefault/common/SourceInfo.asp?GL=Eng",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "traditional knowledge",
+        "Ayurveda",
+        "source texts",
+        "TKDL"
+      ]
+    },
+
+    {
+      "source_id": "AYUSH_OFFICIAL",
+      "id": "AYUSH_OFFICIAL",
+      "title": "Ministry of Ayush",
+      "document": "Ministry of Ayush Official Information",
+      "authority": "Government of India",
+      "organization": "Ministry of Ayush",
+      "jurisdiction": "India",
+      "category": "Ayurveda and AYUSH",
+      "authority_level": "primary",
+      "official_url": "https://ayush.gov.in/",
+      "url": "https://ayush.gov.in/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Ayurveda",
+        "AYUSH",
+        "traditional medicine",
+        "regulatory information"
+      ]
+    },
+
+    {
+      "source_id": "AYUSH_RESEARCH_PORTAL",
+      "id": "AYUSH_RESEARCH_PORTAL",
+      "title": "AYUSH Research Portal",
+      "document": "AYUSH Research Portal",
+      "authority": "Government of India",
+      "organization": "Ministry of Ayush",
+      "jurisdiction": "India",
+      "category": "Ayurveda Research",
+      "authority_level": "primary",
+      "official_url": "https://arp.ayush.gov.in/",
+      "url": "https://arp.ayush.gov.in/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Ayurveda research",
+        "AYUSH research",
+        "traditional medicine"
+      ]
+    },
+
+    {
+      "source_id": "CDSCO_TRADITIONAL_DRUGS",
+      "id": "CDSCO_TRADITIONAL_DRUGS",
+      "title": "Traditional Drugs",
+      "document": "Traditional Drugs Regulatory Information",
+      "authority": "Central Drugs Standard Control Organization",
+      "organization": "Directorate General of Health Services, Ministry of Health and Family Welfare",
+      "jurisdiction": "India",
+      "category": "Regulatory Classification",
+      "authority_level": "primary",
+      "official_url": "https://cdsco.gov.in/opencms/opencms/en/Traditional_Drugs/",
+      "url": "https://cdsco.gov.in/opencms/opencms/en/Traditional_Drugs/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Ayurvedic drug",
+        "Siddha",
+        "Unani",
+        "drug classification",
+        "regulatory"
+      ]
+    },
+
+    {
+      "source_id": "CDSCO_DRUG_RULES",
+      "id": "CDSCO_DRUG_RULES",
+      "title": "Drugs Rules, 1945",
+      "document": "The Drugs Rules, 1945",
+      "authority": "Central Drugs Standard Control Organization",
+      "organization": "Ministry of Health and Family Welfare",
+      "jurisdiction": "India",
+      "category": "Drug Regulation",
+      "authority_level": "primary",
+      "official_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+      "url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "drugs",
+        "drug regulation",
+        "licensing",
+        "manufacturing",
+        "regulatory classification"
+      ]
+    },
+
+    {
+      "source_id": "CDSCO_COSMETICS_RULES",
+      "id": "CDSCO_COSMETICS_RULES",
+      "title": "Cosmetics Rules, 2020",
+      "document": "The Cosmetics Rules, 2020",
+      "authority": "Central Drugs Standard Control Organization",
+      "organization": "Ministry of Health and Family Welfare",
+      "jurisdiction": "India",
+      "category": "Cosmetics Regulation",
+      "authority_level": "primary",
+      "official_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Cosmetics-Rules/",
+      "url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Cosmetics-Rules/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "cosmetics",
+        "cosmetic classification",
+        "cosmetic regulation",
+        "manufacturing",
+        "labelling",
+        "quality",
+        "import"
+      ]
+    },
+
+    {
+      "source_id": "FSSAI_REGULATIONS",
+      "id": "FSSAI_REGULATIONS",
+      "title": "Food Safety and Standards Regulations",
+      "document": "Food Safety and Standards Regulations",
+      "authority": "Food Safety and Standards Authority of India",
+      "organization": "FSSAI",
+      "jurisdiction": "India",
+      "category": "Food Regulation",
+      "authority_level": "primary",
+      "official_url": "https://www.fssai.gov.in/food-law/regulations",
+      "url": "https://www.fssai.gov.in/food-law/regulations",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "food",
+        "Ayurveda Aahara",
+        "food regulation",
+        "food product"
+      ]
+    },
+
+    {
+      "source_id": "FSSAI_AYURVEDA_AAHARA",
+      "id": "FSSAI_AYURVEDA_AAHARA",
+      "title": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022",
+      "document": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022",
+      "authority": "Food Safety and Standards Authority of India",
+      "organization": "FSSAI",
+      "jurisdiction": "India",
+      "category": "Ayurveda Food",
+      "authority_level": "primary",
+      "official_url": "https://fssai.gov.in/upload/notifications/2022/05/62789a20b54bdGazette_Notification_Ayurveda_Aahara_09_05_2022.pdf",
+      "url": "https://fssai.gov.in/upload/notifications/2022/05/62789a20b54bdGazette_Notification_Ayurveda_Aahara_09_05_2022.pdf",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Ayurveda Aahara",
+        "food",
+        "Ayurvedic food",
+        "food regulation"
+      ]
+    },
+
+    {
+      "source_id": "BIOLOGICAL_DIVERSITY_ACT",
+      "id": "BIOLOGICAL_DIVERSITY_ACT",
+      "title": "Biological Diversity Act, 2002",
+      "document": "Biological Diversity Act, 2002",
+      "authority": "Government of India",
+      "organization": "Ministry of Environment, Forest and Climate Change / India Code",
+      "jurisdiction": "India",
+      "category": "Biodiversity and ABS",
+      "authority_level": "primary",
+      "official_url": "https://www.moef.gov.in/uploads/2024/07/SL.No.%201%20Biological%20Diversity%20Act%202002.pdf",
+      "url": "https://www.moef.gov.in/uploads/2024/07/SL.No.%201%20Biological%20Diversity%20Act%202002.pdf",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "biodiversity",
+        "biological resources",
+        "access and benefit sharing",
+        "ABS",
+        "intellectual property"
+      ],
+      "notes": "Use together with current amendments and subordinate rules/regulations where applicable."
+    },
+
+    {
+      "source_id": "BIOLOGICAL_DIVERSITY_AMENDMENT_2023",
+      "id": "BIOLOGICAL_DIVERSITY_AMENDMENT_2023",
+      "title": "Biological Diversity (Amendment) Act, 2023",
+      "document": "Biological Diversity (Amendment) Act, 2023",
+      "authority": "Government of India",
+      "organization": "Ministry of Environment, Forest and Climate Change",
+      "jurisdiction": "India",
+      "category": "Biodiversity and ABS",
+      "authority_level": "primary",
+      "official_url": "https://www.moef.gov.in/",
+      "url": "https://www.moef.gov.in/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "biodiversity",
+        "biological resources",
+        "ABS",
+        "benefit sharing",
+        "biological diversity amendment"
+      ],
+      "notes": "Registry points to the official Ministry portal; exact consolidated legal text should be retrieved from the current official legal repository before making provision-specific claims."
+    },
+
+    {
+      "source_id": "NBA_ABS",
+      "id": "NBA_ABS",
+      "title": "Access and Benefit Sharing Notifications and Guidelines",
+      "document": "National Biodiversity Authority ABS Notifications and Guidelines",
+      "authority": "National Biodiversity Authority",
+      "organization": "National Biodiversity Authority, Government of India",
+      "jurisdiction": "India",
+      "category": "Biodiversity and ABS",
+      "authority_level": "primary",
+      "official_url": "https://nbaindia.nic.in/public-information/notification-guidelines?tid=7",
+      "url": "https://nbaindia.nic.in/public-information/notification-guidelines?tid=7",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "ABS",
+        "benefit sharing",
+        "biodiversity",
+        "biological resources"
+      ]
+    },
+
+    {
+      "source_id": "NBA_FAQ",
+      "id": "NBA_FAQ",
+      "title": "National Biodiversity Authority FAQs",
+      "document": "National Biodiversity Authority Frequently Asked Questions",
+      "authority": "National Biodiversity Authority",
+      "organization": "National Biodiversity Authority, Government of India",
+      "jurisdiction": "India",
+      "category": "Biodiversity and ABS",
+      "authority_level": "primary",
+      "official_url": "https://nbaindia.nic.in/about-us/faqs",
+      "url": "https://nbaindia.nic.in/about-us/faqs",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "ABS",
+        "biological resources",
+        "biodiversity",
+        "benefit sharing"
+      ]
+    },
+
+    {
+      "source_id": "INDIA_CODE_TRADEMARK",
+      "id": "INDIA_CODE_TRADEMARK",
+      "title": "Trade Marks Act, 1999",
+      "document": "The Trade Marks Act, 1999",
+      "authority": "Government of India",
+      "organization": "Intellectual Property India",
+      "jurisdiction": "India",
+      "category": "Trademarks",
+      "authority_level": "primary",
+      "official_url": "https://ipindia.gov.in/tm-act-1999",
+      "url": "https://ipindia.gov.in/tm-act-1999",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "trademark",
+        "brand",
+        "logo",
+        "trade mark registration"
+      ]
+    },
+
+    {
+      "source_id": "INDIA_CODE_GI",
+      "id": "INDIA_CODE_GI",
+      "title": "Geographical Indications of Goods (Registration and Protection) Act, 1999",
+      "document": "The Geographical Indications of Goods (Registration and Protection) Act, 1999",
+      "authority": "Government of India",
+      "organization": "Intellectual Property India",
+      "jurisdiction": "India",
+      "category": "Geographical Indications",
+      "authority_level": "primary",
+      "official_url": "https://ipindia.gov.in/page-content/geographical-indications-act-1999",
+      "url": "https://ipindia.gov.in/page-content/geographical-indications-act-1999",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "geographical indication",
+        "GI",
+        "traditional products",
+        "origin-based products"
+      ]
+    },
+
+    {
+      "source_id": "INDIA_DESIGNS_ACT",
+      "id": "INDIA_DESIGNS_ACT",
+      "title": "The Designs Act, 2000",
+      "document": "The Designs Act, 2000",
+      "authority": "Government of India",
+      "organization": "Intellectual Property India",
+      "jurisdiction": "India",
+      "category": "Industrial Designs",
+      "authority_level": "primary",
+      "official_url": "https://www.ipindia.gov.in/the-designs-act-2000",
+      "url": "https://www.ipindia.gov.in/the-designs-act-2000",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "design",
+        "industrial design",
+        "product appearance",
+        "design registration"
+      ]
+    },
+
+    {
+      "source_id": "INDIA_COPYRIGHT_ACT",
+      "id": "INDIA_COPYRIGHT_ACT",
+      "title": "The Copyright Act, 1957",
+      "document": "The Copyright Act, 1957",
+      "authority": "Government of India",
+      "organization": "Copyright Office / Intellectual Property India",
+      "jurisdiction": "India",
+      "category": "Copyright",
+      "authority_level": "primary",
+      "official_url": "https://www.ipindia.gov.in/copyright-acts",
+      "url": "https://www.ipindia.gov.in/copyright-acts",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "copyright",
+        "artistic work",
+        "literary work",
+        "software",
+        "creative content"
+      ]
+    },
+
+    {
+      "source_id": "PPVFRA_OFFICIAL",
+      "id": "PPVFRA_OFFICIAL",
+      "title": "Protection of Plant Varieties and Farmers' Rights Authority",
+      "document": "Protection of Plant Varieties and Farmers' Rights Authority",
+      "authority": "Government of India",
+      "organization": "Protection of Plant Varieties and Farmers' Rights Authority",
+      "jurisdiction": "India",
+      "category": "Plant Varieties",
+      "authority_level": "primary",
+      "official_url": "https://plantauthority.gov.in/",
+      "url": "https://plantauthority.gov.in/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "plant varieties",
+        "farmers rights",
+        "plant genetic resources",
+        "plant variety protection"
+      ]
+    },
+
+    {
+      "source_id": "PPVFRA_ACT",
+      "id": "PPVFRA_ACT",
+      "title": "Protection of Plant Varieties and Farmers' Rights Act, 2001",
+      "document": "Protection of Plant Varieties and Farmers' Rights Act, 2001",
+      "authority": "Government of India",
+      "organization": "Protection of Plant Varieties and Farmers' Rights Authority",
+      "jurisdiction": "India",
+      "category": "Plant Varieties",
+      "authority_level": "primary",
+      "official_url": "https://plantauthority.gov.in/gazette/protection-plant-varieties-farmers-rights-act-2001",
+      "url": "https://plantauthority.gov.in/gazette/protection-plant-varieties-farmers-rights-act-2001",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "plant varieties",
+        "farmers rights",
+        "plant variety protection"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_TRADITIONAL_KNOWLEDGE",
+      "id": "WIPO_TRADITIONAL_KNOWLEDGE",
+      "title": "WIPO Traditional Knowledge",
+      "document": "WIPO Traditional Knowledge and Genetic Resources",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "Traditional Knowledge",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/traditional-knowledge/",
+      "url": "https://www.wipo.int/en/web/traditional-knowledge/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "traditional knowledge",
+        "genetic resources",
+        "traditional cultural expressions",
+        "intellectual property"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_TK_DOCUMENTATION",
+      "id": "WIPO_TK_DOCUMENTATION",
+      "title": "WIPO Traditional Knowledge Documentation Resources",
+      "document": "Traditional Knowledge and Traditional Cultural Expressions Resources",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "Traditional Knowledge",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/traditional-knowledge/resources/tk-and-tces",
+      "url": "https://www.wipo.int/en/web/traditional-knowledge/resources/tk-and-tces",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "traditional knowledge",
+        "TK documentation",
+        "traditional cultural expressions"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_GRATK_TREATY",
+      "id": "WIPO_GRATK_TREATY",
+      "title": "WIPO Treaty on Intellectual Property, Genetic Resources and Associated Traditional Knowledge",
+      "document": "WIPO GRATK Treaty",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "Genetic Resources and Traditional Knowledge",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/treaties/ip/gratk/index",
+      "url": "https://www.wipo.int/en/web/treaties/ip/gratk/index",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "genetic resources",
+        "traditional knowledge",
+        "patent disclosure",
+        "IP",
+        "GRATK"
+      ],
+      "notes": "Adopted on May 24, 2024. Do not present treaty obligations as applicable domestic law without checking the relevant jurisdiction and legal status."
+    },
+
+    {
+      "source_id": "WIPO_PCT",
+      "id": "WIPO_PCT",
+      "title": "Patent Cooperation Treaty System",
+      "document": "WIPO PCT System",
+      "authority": "World Intellectual Property Organization",
+      "jurisdiction": "International",
+      "category": "International Patents",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/pct-system/",
+      "url": "https://www.wipo.int/en/web/pct-system/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "PCT",
+        "international patent",
+        "international filing",
+        "patent protection"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_MADRID",
+      "id": "WIPO_MADRID",
+      "title": "WIPO Madrid System",
+      "document": "Madrid System for International Trademark Protection",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "International Trademarks",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/madrid-system",
+      "url": "https://www.wipo.int/en/web/madrid-system",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Madrid System",
+        "international trademark",
+        "trademark protection",
+        "global brand protection"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_LISBON",
+      "id": "WIPO_LISBON",
+      "title": "WIPO Lisbon System",
+      "document": "International System of Appellations of Origin and Geographical Indications",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "International Geographical Indications",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/lisbon-system",
+      "url": "https://www.wipo.int/en/web/lisbon-system",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Lisbon System",
+        "geographical indications",
+        "appellations of origin",
+        "international GI protection"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_HAGUE",
+      "id": "WIPO_HAGUE",
+      "title": "WIPO Hague System",
+      "document": "Hague System for the International Registration of Industrial Designs",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "International Designs",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/hague-system/",
+      "url": "https://www.wipo.int/en/web/hague-system/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Hague System",
+        "industrial designs",
+        "international design registration",
+        "design protection"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_TRIPS",
+      "id": "WIPO_TRIPS",
+      "title": "TRIPS Agreement",
+      "document": "Agreement on Trade-Related Aspects of Intellectual Property Rights",
+      "authority": "World Trade Organization",
+      "organization": "WTO",
+      "jurisdiction": "International",
+      "category": "International Intellectual Property",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/wipolex/en/treaties/details/231",
+      "url": "https://www.wipo.int/wipolex/en/treaties/details/231",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "TRIPS",
+        "patents",
+        "trademarks",
+        "copyright",
+        "geographical indications",
+        "industrial designs",
+        "trade secrets",
+        "plant varieties"
+      ]
+    },
+
+    {
+      "source_id": "CBD_OFFICIAL",
+      "id": "CBD_OFFICIAL",
+      "title": "Convention on Biological Diversity",
+      "document": "Convention on Biological Diversity",
+      "authority": "United Nations Environment Programme / Convention on Biological Diversity",
+      "organization": "Convention on Biological Diversity",
+      "jurisdiction": "International",
+      "category": "Biodiversity",
+      "authority_level": "official_international",
+      "official_url": "https://www.cbd.int/",
+      "url": "https://www.cbd.int/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "biodiversity",
+        "genetic resources",
+        "traditional knowledge",
+        "benefit sharing",
+        "ABS"
+      ]
+    },
+
+    {
+      "source_id": "CBD_NAGOYA_PROTOCOL",
+      "id": "CBD_NAGOYA_PROTOCOL",
+      "title": "Nagoya Protocol on Access and Benefit-sharing",
+      "document": "Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization",
+      "authority": "Convention on Biological Diversity",
+      "organization": "Convention on Biological Diversity",
+      "jurisdiction": "International",
+      "category": "Access and Benefit-sharing",
+      "authority_level": "official_international",
+      "official_url": "https://www.cbd.int/abs",
+      "url": "https://www.cbd.int/abs",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "Nagoya Protocol",
+        "ABS",
+        "genetic resources",
+        "benefit sharing",
+        "traditional knowledge"
+      ]
+    },
+
+    {
+      "source_id": "WIPO_TRADE_SECRETS",
+      "id": "WIPO_TRADE_SECRETS",
+      "title": "WIPO Trade Secrets",
+      "document": "Trade Secrets and Confidential Business Information",
+      "authority": "World Intellectual Property Organization",
+      "organization": "WIPO",
+      "jurisdiction": "International",
+      "category": "Trade Secrets",
+      "authority_level": "official_international",
+      "official_url": "https://www.wipo.int/en/web/trade-secrets/",
+      "url": "https://www.wipo.int/en/web/trade-secrets/",
+      "access": "public",
+      "use_for_rag": true,
+      "topics": [
+        "trade secret",
+        "confidential information",
+        "confidential business information",
+        "formulas",
+        "recipes",
+        "manufacturing process"
+      ],
+      "notes": "Use as international/general guidance. Trade-secret protection varies by jurisdiction; do not represent WIPO guidance as Indian statutory law."
+    }
+
+  ]
+}

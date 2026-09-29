@@ -1,0 +1,186 @@
+IP-SAKTI SAHAYAK KNOWLEDGE BASE
+
+TOPIC: TRADITIONAL KNOWLEDGE AND PATENTS
+
+SOURCE_ID: IND_PATENTS_ACT
+SOURCE_ID: TKDL_SOURCE_INFORMATION
+SOURCE_ID: IND_TK_BIO_PATENT_GUIDELINES
+
+Traditional knowledge is relevant to intellectual property assessment involving Ayurveda and traditional medicinal knowledge.
+
+SOURCE_ID: IND_PATENTS_ACT
+Under Section 3(p) of the Indian Patents Act, 1970, an invention which is in effect traditional knowledge, or which is an aggregation or duplication of known properties of traditionally known component or components, is excluded from patentability.
+
+SOURCE_ID: TKDL_SOURCE_INFORMATION
+Documented traditional knowledge may therefore be relevant when assessing whether an Ayurvedic formulation is already known.
+
+SOURCE_ID: TKDL_SOURCE_INFORMATION
+The Traditional Knowledge Digital Library (TKDL) is a database documenting traditional medicinal knowledge and may assist in prior-art assessment relating to Indian traditional systems of medicine.
+
+SOURCE_ID: IND_PATENTS_ACT
+A patent application involving an Ayurvedic formulation should be assessed for novelty, inventive step and industrial applicability, together with applicable exclusions under patent law.
+
+
+TOPIC: PRIOR ART
+
+SOURCE_ID: IND_PATENTS_ACT
+SOURCE_ID: IND_IP_PATENTS
+SOURCE_ID: TKDL_SOURCE_INFORMATION
+
+SOURCE_ID: IND_PATENTS_ACT
+Prior art is information that may be relevant to determining whether an invention is new and involves an inventive step.
+
+SOURCE_ID: IND_IP_PATENTS
+For an Ayurvedic formulation, relevant prior art may include patent documents, scientific publications, publicly available technical information and documented traditional knowledge.
+
+SOURCE_ID: IND_IP_PATENTS
+A prior-art search should be conducted before making a patentability assessment.
+
+SOURCE_ID: IND_PATENTS_ACT
+The exact formulation, ingredients, quantities, process, claimed technical effect and relevant dates should be considered when evaluating prior art.
+
+
+TOPIC: PATENTABILITY
+
+SOURCE_ID: IND_PATENTS_ACT
+SOURCE_ID: IND_IP_PATENTS
+
+SOURCE_ID: IND_PATENTS_ACT
+Patentability assessment generally considers novelty, inventive step and industrial applicability.
+
+SOURCE_ID: IND_PATENTS_ACT
+A formulation consisting only of traditionally known ingredients or properties may face patentability challenges.
+
+SOURCE_ID: IND_IP_PATENTS
+A claimed invention should be evaluated based on its specific technical features rather than only its product name.
+
+SOURCE_ID: IND_IP_PATENTS
+Experimental evidence and technical data may be relevant when an applicant relies on a technical effect or improved property.
+
+
+TOPIC: AYURVEDIC PRODUCT CLASSIFICATION
+
+SOURCE_ID: AYUSH_OFFICIAL
+SOURCE_ID: CDSCO_TRADITIONAL_DRUGS
+SOURCE_ID: FSSAI_AYURVEDA_AAHARA
+
+SOURCE_ID: AYUSH_OFFICIAL
+An Ayurvedic product should be classified by considering its ingredients, formulation, dosage form, intended use and claims.
+
+SOURCE_ID: CDSCO_TRADITIONAL_DRUGS
+The regulatory pathway may differ depending on whether a product falls within an applicable Ayurvedic medicine, food, cosmetic or another regulatory category.
+
+SOURCE_ID: AYUSH_OFFICIAL
+Product classification should be verified against the current requirements of the relevant Indian authority.
+
+SOURCE_ID: AYUSH_OFFICIAL
+The name of a product alone should not be treated as sufficient to determine its legal classification.
+
+
+TOPIC: AYUSH REGULATORY FRAMEWORK
+
+SOURCE_ID: AYUSH_OFFICIAL
+SOURCE_ID: CDSCO_TRADITIONAL_DRUGS
+SOURCE_ID: CDSCO_DRUG_RULES
+
+SOURCE_ID: CDSCO_TRADITIONAL_DRUGS
+Ayurvedic medicines are subject to applicable Indian regulatory requirements.
+
+SOURCE_ID: AYUSH_OFFICIAL
+The Ministry of Ayush and relevant Indian regulatory authorities provide information concerning Ayurveda and related traditional systems of medicine.
+
+SOURCE_ID: CDSCO_DRUG_RULES
+The applicable requirements depend on the nature of the product, ingredients, claims, manufacturing activity and intended use.
+
+SOURCE_ID: AYUSH_OFFICIAL
+Current official requirements should always be verified before making a regulatory compliance decision.
+
+
+TOPIC: BIOLOGICAL DIVERSITY AND ACCESS AND BENEFIT SHARING
+
+SOURCE_ID: BIOLOGICAL_DIVERSITY_ACT
+SOURCE_ID: NBA_ABS
+SOURCE_ID: NBA_FAQ
+
+SOURCE_ID: NBA_ABS
+Access and Benefit Sharing, commonly referred to as ABS, may become relevant when biological resources or associated traditional knowledge are accessed or used.
+
+SOURCE_ID: BIOLOGICAL_DIVERSITY_ACT
+An Ayurveda-related project involving biological resources should be assessed for potential biodiversity and ABS requirements.
+
+SOURCE_ID: NBA_FAQ
+The applicable legal framework, authority and current requirements should be verified before reaching a compliance conclusion.
+
+
+TOPIC: INTERNATIONAL PATENT PROTECTION
+
+SOURCE_ID: WIPO_PCT
+SOURCE_ID: IND_IP_PATENTS
+
+SOURCE_ID: WIPO_PCT
+Patent protection is generally territorial.
+
+SOURCE_ID: WIPO_PCT
+A person seeking patent protection in multiple countries may consider international filing mechanisms such as the Patent Cooperation Treaty, commonly called the PCT, subject to applicable requirements.
+
+SOURCE_ID: WIPO_PCT
+The PCT provides an international filing procedure but does not itself grant a single worldwide patent.
+
+SOURCE_ID: WIPO_PCT
+National or regional patent procedures remain relevant.
+
+
+TOPIC: TRADEMARK
+
+SOURCE_ID: INDIA_CODE_TRADEMARK
+SOURCE_ID: IND_IP_PATENTS
+
+SOURCE_ID: INDIA_CODE_TRADEMARK
+A trademark may protect a distinctive brand name, logo, symbol or other sign used to distinguish goods or services.
+
+SOURCE_ID: INDIA_CODE_TRADEMARK
+Trademark assessment is different from patent assessment.
+
+SOURCE_ID: INDIA_CODE_TRADEMARK
+A brand name for an Ayurvedic product should be assessed separately from the patentability of the formulation itself.
+
+
+TOPIC: IP-SAKTI RAG PROCESS
+
+SOURCE_ID: IND_IP_PATENTS
+SOURCE_ID: AYUSH_OFFICIAL
+
+SOURCE_ID: IND_IP_PATENTS
+IP-SAKTI Sahayak uses a domain-specific knowledge base for Ayurveda, intellectual property and regulatory guidance.
+
+SOURCE_ID: IND_IP_PATENTS
+The user's question is processed to identify relevant knowledge from the local knowledge base.
+
+SOURCE_ID: IND_IP_PATENTS
+Retrieved knowledge is provided to the AI generation layer as contextual evidence.
+
+SOURCE_ID: IND_IP_PATENTS
+The generated response should distinguish retrieved knowledge from general explanation.
+
+SOURCE_ID: IND_IP_PATENTS
+The system should not fabricate laws, sections, cases, treaties, government notifications or citations.
+
+SOURCE_ID: AYUSH_OFFICIAL
+If the available knowledge is insufficient, the system should identify the limitation and recommend verification from authoritative sources.
+
+
+TOPIC: AUTHORITATIVE SOURCES
+
+SOURCE_ID: IND_PATENTS_ACT
+SOURCE_ID: IND_IP_PATENTS
+SOURCE_ID: TKDL_SOURCE_INFORMATION
+SOURCE_ID: AYUSH_OFFICIAL
+
+Important sources to verify include the Patents Act, 1970, Intellectual Property India, the Traditional Knowledge Digital Library, the Ministry of Ayush and relevant Indian government authorities.
+
+Official and current sources should be checked before making a legal or regulatory decision.
+
+IP-SAKTI Sahayak provides educational information and does not provide legal advice.
+
+
+END OF KNOWLEDGE BASE

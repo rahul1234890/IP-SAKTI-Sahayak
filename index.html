@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>IP-SAKTI Sahayak</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body,
+        body *,
+        button,
+        input,
+        textarea,
+        select,
+        option,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        label,
+        span,
+        div {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+
+        /* ==============================
+           PAGE BACKGROUND
+        ============================== */
+
+        body {
+
+            min-height: 100vh;
+
+            background:
+                radial-gradient(
+                    circle at top left,
+                    #e8f6f0 0%,
+                    transparent 38%
+                ),
+                radial-gradient(
+                    circle at bottom right,
+                    #e8f1f8 0%,
+                    transparent 38%
+                ),
+                #f5f9f7;
+
+            color: #17202a;
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        .navbar {
+
+            width: 100%;
+            height: 72px;
+
+            padding: 0 5%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #ffffff;
+
+            border-bottom: 1px solid #e3e9e7;
+
+            box-shadow:
+                0 2px 10px rgba(
+                    20,
+                    50,
+                    40,
+                    0.04
+                );
+
+            position: sticky;
+            top: 0;
+
+            z-index: 100;
+        }
+
+
+        .brand {
+
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+        .logo {
+
+            width: 42px;
+            height: 42px;
+
+            border-radius: 10px;
+
+            background: #087f5b;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            font-size: 16px;
+
+            letter-spacing: 1px;
+        }
+
+
+        .brand h1 {
+
+            font-size: 20px;
+
+            color: #12372d;
+        }
+
+
+        .brand p {
+
+            font-size: 11px;
+
+            color: #7a8580;
+
+            margin-top: 3px;
+        }
+
+
+        .status {
+
+            display: flex;
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 8px 13px;
+
+            border: 1px solid #d7e9e1;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            color: #087f5b;
+
+            background: #f7fcfa;
+        }
+
+
+        .status-dot {
+
+            width: 7px;
+            height: 7px;
+
+            background: #18a874;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==============================
+           PAGE
+        ============================== */
+
+        .page {
+
+            width: min(
+                1400px,
+                94%
+            );
+
+            margin: 22px auto 30px;
+        }
+
+
+        /* ==============================
+           MAIN APPLICATION
+        ============================== */
+
+        .main-card {
+
+            width: 100%;
+
+            height: calc(
+                100vh - 120px
+            );
+
+            min-height: 610px;
+
+            padding: 20px;
+
+            background: #ffffff;
+
+            border: 1px solid #e1e8e5;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 12px 35px rgba(
+                    30,
+                    55,
+                    48,
+                    0.08
+                );
+
+            display: grid;
+
+            grid-template-columns:
+                300px
+                minmax(0, 1fr);
+
+            gap: 20px;
+
+            overflow: hidden;
+        }
+
+
+        /* ==============================
+           LEFT SIDEBAR
+        ============================== */
+
+        .sidebar {
+
+            min-width: 0;
+            min-height: 0;
+
+            padding: 18px;
+
+            background: #f8fbfa;
+
+            border: 1px solid #e2ebe7;
+
+            border-radius: 17px;
+
+            overflow: hidden;
+        }
+
+
+        .sidebar-section {
+
+            margin-bottom: 20px;
+        }
+
+
+        .sidebar-label {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 11px;
+
+            color: #66756f;
+
+            text-transform: uppercase;
+
+            letter-spacing: .5px;
+        }
+
+
+        .sidebar select {
+
+            width: 100%;
+
+            padding: 11px 12px;
+
+            border: 1px solid #d6e1dd;
+
+            border-radius: 10px;
+
+            background: #ffffff;
+
+            color: #344054;
+
+            font-size: 13px;
+
+            outline: none;
+        }
+
+
+        .sidebar-divider {
+
+            height: 1px;
+
+            background: #dfe8e4;
+
+            margin: 18px 0;
+        }
+
+
+        /* ==============================
+           GUIDED PATHWAY
+        ============================== */
+
+        .pathway-heading {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            margin-bottom: 5px;
+        }
+
+
+        .pathway-heading h3,
+        .quick-heading {
+
+            font-size: 14px;
+
+            color: #173c31;
+        }
+
+
+        .pathway-subtitle {
+
+            font-size: 10px;
+
+            color: #7b8782;
+
+            margin-bottom: 7px;
+        }
+
+
+        .pathway-legend {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            margin-bottom: 10px;
+
+            font-size: 9px;
+
+            color: #7b8782;
+        }
+
+
+        .legend-dot {
+
+            width: 7px;
+            height: 7px;
+
+            flex-shrink: 0;
+
+            border-radius: 50%;
+
+            background: #087f5b;
+        }
+
+
+        .pathway {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 7px;
+        }
+
+
+        .pathway-step {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 7px 8px;
+
+            border-radius: 9px;
+
+            color: #69756f;
+
+            font-size: 11px;
+
+            transition:
+                background .15s ease,
+                color .15s ease;
+        }
+
+
+        .pathway-step.active {
+
+            background: #e7f5ef;
+
+            color: #087f5b;
+        }
+
+
+        .step-number {
+
+            width: 23px;
+            height: 23px;
+
+            flex-shrink: 0;
+
+            border-radius: 50%;
+
+            background: #e1e8e5;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 10px;
+        }
+
+
+        .pathway-step.active
+        .step-number {
+
+            background: #087f5b;
+
+            color: white;
+        }
+
+
+        /* ==============================
+           DETECTED DOMAINS
+        ============================== */
+
+        .domain-card {
+
+            margin-top: 8px;
+
+            padding: 12px;
+
+            border: 1px solid #cfe5db;
+
+            background: #edf8f3;
+
+            border-radius: 11px;
+        }
+
+
+        .domain-title {
+
+            color: #087f5b;
+
+            font-size: 11px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .detected-domains {
+
+            color: #53645d;
+
+            font-size: 11px;
+
+            line-height: 1.5;
+        }
+
+
+        /* ==============================
+           QUICK ACTIONS
+        ============================== */
+
+        .quick-heading {
+
+            margin-bottom: 10px;
+        }
+
+
+        .quick-actions {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 8px;
+        }
+
+
+        .quick-button {
+
+            min-height: 42px;
+
+            padding: 8px;
+
+            border: 1px solid #dce5e1;
+
+            border-radius: 9px;
+
+            background: #ffffff;
+
+            color: #45515e;
+
+            cursor: pointer;
+
+            font-size: 11px;
+
+            transition:
+                background .15s ease,
+                border-color .15s ease;
+        }
+
+
+        .quick-button:hover {
+
+            background: #edf8f3;
+
+            border-color: #a8d9c6;
+        }
+
+
+        /* ==============================
+           RIGHT CHAT PANEL
+        ============================== */
+
+        .chat-panel {
+
+            min-width: 0;
+
+            min-height: 0;
+
+            height: 100%;
+
+            border: 1px solid #e1e8e5;
+
+            border-radius: 17px;
+
+            background: #ffffff;
+
+            display: flex;
+
+            flex-direction: column;
+
+            overflow: hidden;
+        }
+
+
+        /* ==============================
+           FIXED CHAT HEADER
+        ============================== */
+
+        .chat-header {
+
+            flex-shrink: 0;
+
+            height: 62px;
+
+            padding: 0 18px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            border-bottom: 1px solid #e7ecea;
+
+            background: #ffffff;
+        }
+
+
+        .chat-header-icon {
+
+            width: 34px;
+            height: 34px;
+
+            border-radius: 9px;
+
+            background: #e9f7f1;
+
+            color: #087f5b;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 15px;
+        }
+
+
+        .chat-header h2 {
+
+            font-size: 16px;
+
+            color: #183c32;
+        }
+
+
+        .chat-header p {
+
+            margin-top: 2px;
+
+            font-size: 10px;
+
+            color: #89938f;
+        }
+
+
+        /* ==============================
+           ONLY MESSAGE AREA SCROLLS
+        ============================== */
+
+        .chat-history {
+
+            flex: 1;
+
+            min-height: 0;
+
+            overflow-y: auto;
+
+            overflow-x: hidden;
+
+            padding: 22px 24px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 18px;
+
+            scroll-behavior: smooth;
+
+            background: #fbfcfc;
+        }
+
+
+        /* ==============================
+           EMPTY CHAT
+        ============================== */
+
+        .chat-empty {
+
+            margin: auto;
+
+            text-align: center;
+
+            max-width: 500px;
+
+            color: #8a9691;
+        }
+
+
+        .chat-empty-icon {
+
+            width: 48px;
+            height: 48px;
+
+            margin:
+                0 auto 12px;
+
+            border-radius: 14px;
+
+            background: #e9f7f1;
+
+            color: #087f5b;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .chat-empty h3 {
+
+            font-size: 17px;
+
+            color: #345148;
+
+            margin-bottom: 7px;
+        }
+
+
+        .chat-empty p {
+
+            font-size: 12px;
+
+            line-height: 1.6;
+        }
+
+
+        /* ==============================
+           CHAT MESSAGES
+        ============================== */
+
+        .chat-message {
+
+            max-width: 82%;
+
+            padding: 13px 16px;
+
+            border-radius: 14px;
+
+            line-height: 1.65;
+
+            font-size: 13px;
+
+            white-space: normal;
+
+            overflow-wrap: anywhere;
+        }
+
+
+        .chat-user {
+
+            align-self: flex-end;
+
+            background: #e5f5ee;
+
+            color: #214b3d;
+
+            border: 1px solid #c9e5d9;
+
+            border-bottom-right-radius: 5px;
+        }
+
+
+        .chat-ai {
+
+            align-self: flex-start;
+
+            background: #f4f7f8;
+
+            color: #45515e;
+
+            border: 1px solid #dfe6e8;
+
+            border-bottom-left-radius: 5px;
+        }
+
+
+        .chat-label {
+
+            font-size: 10px;
+
+            color: #087f5b;
+
+            margin-bottom: 5px;
+
+            letter-spacing: .2px;
+        }
+
+
+        .chat-time {
+
+            margin-top: 7px;
+
+            font-size: 9px;
+
+            color: #89958f;
+        }
+
+
+        .chat-message a {
+
+            color: #087f5b;
+
+            text-decoration: underline;
+
+            word-break: break-all;
+        }
+
+
+        /* ==============================
+           FIXED COMPOSER
+        ============================== */
+
+        .chat-composer {
+
+            flex-shrink: 0;
+
+            padding:
+                12px
+                15px
+                14px;
+
+            border-top:
+                1px solid
+                #e2e9e6;
+
+            background: #ffffff;
+        }
+
+
+        .composer-row {
+
+            display: flex;
+
+            align-items: flex-end;
+
+            gap: 9px;
+        }
+
+
+        .composer-upload {
+
+            width: 42px;
+            height: 42px;
+
+            flex-shrink: 0;
+
+            border:
+                1px solid
+                #d7e2de;
+
+            border-radius: 11px;
+
+            background: #f8faf9;
+
+            color: #087f5b;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            cursor: pointer;
+
+            font-size: 17px;
+        }
+
+
+        .composer-upload:hover {
+
+            background: #edf8f3;
+        }
+
+
+        #documentUpload {
+
+            display: none;
+        }
+
+
+        #question {
+
+            flex: 1;
+
+            width: auto;
+
+            min-height: 44px;
+
+            max-height: 130px;
+
+            padding: 12px 14px;
+
+            border:
+                1px solid
+                #d7e1de;
+
+            border-radius: 12px;
+
+            resize: none;
+
+            outline: none;
+
+            font-size: 13px;
+
+            line-height: 1.45;
+
+            color: #344054;
+
+            background: #ffffff;
+        }
+
+
+        #question:focus {
+
+            border-color: #18a874;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(
+                    24,
+                    168,
+                    116,
+                    .08
+                );
+        }
+
+
+        .translate-button {
+
+            height: 42px;
+
+            padding: 0 12px;
+
+            flex-shrink: 0;
+
+            border:
+                1px solid
+                #d7e2de;
+
+            border-radius: 11px;
+
+            background: #ffffff;
+
+            color: #53645d;
+
+            cursor: pointer;
+
+            font-size: 11px;
+        }
+
+
+        .translate-button:hover {
+
+            background: #f4f8f6;
+        }
+
+
+        .send-button {
+
+            width: 44px;
+            height: 44px;
+
+            flex-shrink: 0;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #087f5b;
+
+            color: #ffffff;
+
+            cursor: pointer;
+
+            font-size: 17px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .send-button:hover {
+
+            background: #06694b;
+        }
+
+
+        .send-button:disabled {
+
+            opacity: .6;
+
+            cursor: not-allowed;
+        }
+
+
+        .composer-bottom {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-top: 7px;
+
+            min-height: 16px;
+        }
+
+
+        .selected-file {
+
+            font-size: 10px;
+
+            color: #087f5b;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .composer-hint {
+
+            margin-left: auto;
+
+            font-size: 9px;
+
+            color: #9aa49f;
+        }
+
+
+        /* ==============================
+           INFORMATION BAR
+        ============================== */
+
+        .disclaimer {
+
+            margin-top: 16px;
+
+            padding:
+                13px
+                20px;
+
+            background: #fff9e8;
+
+            border:
+                1px solid
+                #f0dfac;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            color: #665725;
+
+            font-size: 11px;
+
+            line-height: 1.55;
+        }
+
+
+        footer {
+
+            text-align: center;
+
+            padding: 16px;
+
+            color: #8a9691;
+
+            font-size: 10px;
+        }
+
+
+        /* ==============================
+           JAVASCRIPT/OLD CARD HIDDEN
+        ============================== */
+
+        .answer-card {
+
+            display: none !important;
+        }
+
+
+        /* ==============================
+           DESKTOP HEIGHT ADJUSTMENT
+        ============================== */
+
+        @media (max-height: 820px) {
+
+            .main-card {
+
+                min-height: 610px;
+            }
+
+
+            .sidebar {
+
+                padding: 14px;
+            }
+
+
+            .sidebar-section {
+
+                margin-bottom: 13px;
+            }
+
+
+            .chat-history {
+
+                padding:
+                    16px
+                    20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         HEADER
+    ============================== -->
+
+    <nav class="navbar">
+
+
+        <div class="brand">
+
+
+            <div class="logo">
+                IP
+            </div>
+
+
+            <div>
+
+                <h1>
+                    IP-SAKTI Sahayak
+                </h1>
+
+
+                <p>
+                    Ayurveda IP &amp; Regulatory Intelligence
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            System Ready
+
+        </div>
+
+
+    </nav>
+
+
+    <div class="page">
+
+
+        <!-- ==============================
+             MAIN APPLICATION
+        ============================== -->
+
+        <main class="main-card">
+
+
+            <!-- ==============================
+                 LEFT SIDEBAR
+            ============================== -->
+
+            <aside class="sidebar">
+
+
+                <!-- JURISDICTION -->
+
+                <div class="sidebar-section">
+
+
+                    <label
+                        class="sidebar-label"
+                        for="jurisdiction"
+                    >
+
+                        Jurisdiction
+
+                    </label>
+
+
+                    <select
+                        id="jurisdiction"
+                    >
+
+                        <option value="India">
+                            India
+                        </option>
+
+
+                        <option value="International">
+                            International
+                        </option>
+
+
+                    </select>
+
+
+                </div>
+
+
+                <!-- LANGUAGE -->
+
+                <div class="sidebar-section">
+
+
+                    <label
+                        class="sidebar-label"
+                        for="language"
+                    >
+
+                        Language
+
+                    </label>
+
+
+                    <select
+                        id="language"
+                    >
+
+                        <option value="English">
+                            English
+                        </option>
+
+
+                        <option value="Hindi">
+                            Hindi
+                        </option>
+
+
+                        <option value="Marathi">
+                            Marathi
+                        </option>
+
+
+                    </select>
+
+
+                </div>
+
+
+                <div class="sidebar-divider"></div>
+
+
+                <!-- ==============================
+                     GUIDED PATHWAY
+                ============================== -->
+
+                <div class="sidebar-section">
+
+
+                    <div class="pathway-heading">
+
+                        <h3>
+                            Guided IP Pathway
+                        </h3>
+
+                    </div>
+
+
+                    <div class="pathway-subtitle">
+
+                        Innovation to Protection
+
+                    </div>
+
+
+                    <div class="pathway-legend">
+
+                        <span class="legend-dot"></span>
+
+                        <span>
+                            Green = Relevant to your current query
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway">
+
+
+                        <div class="pathway-step active">
+
+                            <span class="step-number">
+                                1
+                            </span>
+
+                            <span>
+                                Innovation
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                2
+                            </span>
+
+                            <span>
+                                Classification
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                3
+                            </span>
+
+                            <span>
+                                Patentability
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                4
+                            </span>
+
+                            <span>
+                                TK Check
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                5
+                            </span>
+
+                            <span>
+                                ABS Check
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                6
+                            </span>
+
+                            <span>
+                                Trademark
+                            </span>
+
+                        </div>
+
+
+                        <div class="pathway-step">
+
+                            <span class="step-number">
+                                7
+                            </span>
+
+                            <span>
+                                International
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==============================
+                     DETECTED DOMAINS
+                ============================== -->
+
+                <div class="sidebar-section">
+
+
+                    <div class="domain-card">
+
+
+                        <div class="domain-title">
+
+                            Detected Domains
+
+                        </div>
+
+
+                        <div
+                            id="detectedDomains"
+                            class="detected-domains"
+                        >
+
+                            No specific domain detected yet
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==============================
+                     QUICK ACTIONS
+                ============================== -->
+
+                <div class="sidebar-section">
+
+
+                    <h3 class="quick-heading">
+
+                        Quick Actions
+
+                    </h3>
+
+
+                    <div class="quick-actions">
+
+
+                        <button
+                            class="quick-button"
+                            onclick="setQuestion('Classify my Ayurvedic product')"
+                        >
+
+                            Classify Product
+
+                        </button>
+
+
+                        <button
+                            class="quick-button"
+                            onclick="setQuestion('What patent protection may be relevant for my Ayurvedic innovation?')"
+                        >
+
+                            Patent Pathway
+
+                        </button>
+
+
+                        <button
+                            class="quick-button"
+                            onclick="setQuestion('Does my use of a biological resource require ABS consideration?')"
+                        >
+
+                            ABS Check
+
+                        </button>
+
+
+                        <button
+                            class="quick-button"
+                            onclick="setQuestion('How should I consider traditional knowledge and prior art?')"
+                        >
+
+                            Traditional Knowledge
+
+                        </button>
+
+
+                        <button
+                            class="quick-button"
+                            onclick="setQuestion('How can I protect my Ayurvedic brand internationally?')"
+                        >
+
+                            International
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </aside>
+
+
+            <!-- ==============================
+                 RIGHT CHAT PANEL
+            ============================== -->
+
+            <section class="chat-panel">
+
+
+                <!-- FIXED HEADER -->
+
+                <div class="chat-header">
+
+
+                    <div class="chat-header-icon">
+
+                        IP
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            Chat with IP-SAKTI
+                        </h2>
+
+
+                        <p>
+                            Evidence-grounded Ayurveda IP &amp; regulatory guidance
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==============================
+                     ONLY MESSAGE AREA SCROLLS
+                ============================== -->
+
+                <div
+                    class="chat-history"
+                    id="chatHistory"
+                >
+
+
+                    <div
+                        class="chat-empty"
+                        id="chatEmpty"
+                    >
+
+
+                        <div class="chat-empty-icon">
+
+                            IP
+
+                        </div>
+
+
+                        <h3>
+
+                            How can IP-SAKTI help?
+
+                        </h3>
+
+
+                        <p>
+
+                            Ask about patents,
+                            traditional knowledge,
+                            biodiversity, ABS,
+                            trademarks, AYUSH,
+                            regulatory pathways
+                            or international IP.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==============================
+                     FIXED BOTTOM COMPOSER
+                ============================== -->
+
+                <div class="chat-composer">
+
+
+                    <div class="composer-row">
+
+
+                        <label
+                            class="composer-upload"
+                            for="documentUpload"
+                            title="Upload supporting document"
+                        >
+
+                            📎
+
+                        </label>
+
+
+                        <input
+                            type="file"
+                            id="documentUpload"
+                            accept=".pdf,.docx,.txt"
+                        >
+
+
+                        <textarea
+                            id="question"
+                            rows="1"
+                            placeholder="Type your IP / Ayurveda question..."
+                        ></textarea>
+
+
+                        <button
+                            type="button"
+                            class="translate-button"
+                            onclick="focusQuestion()"
+                        >
+
+                            Translate
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="send-button"
+                            id="sendButton"
+                            onclick="askIPSAKTI()"
+                            title="Send"
+                        >
+
+                            ➤
+
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="composer-bottom">
+
+
+                        <div
+                            class="selected-file"
+                            id="selectedFile"
+                        ></div>
+
+
+                        <div class="composer-hint">
+
+                            Enter your question and press Send
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+        <!-- ==============================
+             INFORMATION BAR
+        ============================== -->
+
+        <div class="disclaimer">
+
+            Important:
+            IP-SAKTI Sahayak provides educational information based on
+            its domain-specific knowledge base. Always verify applicable
+            intellectual property and regulatory requirements with the
+            relevant authority or qualified professional.
+
+        </div>
+
+
+        <footer>
+
+            IP-SAKTI Sahayak • Intelligent Ayurveda IP Assistant
+
+        </footer>
+
+
+    </div>
+
+
+    <script>
+
+
+        /* ==============================
+           QUESTION / QUICK ACTION
+        ============================== */
+
+        function setQuestion(text) {
+
+
+            const questionBox =
+                document.getElementById(
+                    "question"
+                );
+
+
+            questionBox.value =
+                text;
+
+
+            questionBox.focus();
+
+
+            updatePathwayFromQuestion(
+                text
+            );
+
+        }
+
+
+        function focusQuestion() {
+
+
+            document
+                .getElementById(
+                    "question"
+                )
+                .focus();
+
+        }
+
+
+        /* ==============================
+           PATHWAY DETECTION
+        ============================== */
+
+        function updatePathwayFromQuestion(
+            text
+        ) {
+
+
+            const pathwaySteps =
+                document.querySelectorAll(
+                    ".pathway-step"
+                );
+
+
+            pathwaySteps.forEach(
+                step => {
+
+                    step.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+            const q =
+                text.toLowerCase();
+
+
+            if (
+                q.includes("classify")
+            ) {
+
+
+                pathwaySteps[1]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else if (
+                q.includes("patent") ||
+                q.includes("patentability")
+            ) {
+
+
+                pathwaySteps[2]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else if (
+                q.includes("traditional") ||
+                q.includes("tkdl")
+            ) {
+
+
+                pathwaySteps[3]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else if (
+                q.includes("abs") ||
+                q.includes("biological") ||
+                q.includes("biodiversity")
+            ) {
+
+
+                pathwaySteps[4]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else if (
+                q.includes("brand") ||
+                q.includes("trademark")
+            ) {
+
+
+                pathwaySteps[5]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else if (
+                q.includes("international") ||
+                q.includes("pct") ||
+                q.includes("wipo")
+            ) {
+
+
+                pathwaySteps[6]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+
+            else {
+
+
+                pathwaySteps[0]
+                    .classList.add(
+                        "active"
+                    );
+
+            }
+
+        }
+
+
+        /* ==============================
+           SAFE HTML
+        ============================== */
+
+        function escapeHtml(value) {
+
+
+            return String(value)
+
+                .replace(
+                    /&/g,
+                    "&amp;"
+                )
+
+                .replace(
+                    /</g,
+                    "&lt;"
+                )
+
+                .replace(
+                    />/g,
+                    "&gt;"
+                )
+
+                .replace(
+                    /"/g,
+                    "&quot;"
+                )
+
+                .replace(
+                    /'/g,
+                    "&#039;"
+                );
+
+        }
+
+
+        function formatAnswer(value) {
+
+    let text = escapeHtml(value);
+
+    // Bold: **text**
+    text = text.replace(
+        /\*\*(.*?)\*\*/g,
+        "<strong>$1</strong>"
+    );
+
+    // Headings: ### Heading
+    text = text.replace(
+        /^### (.*)$/gm,
+        "<h3>$1</h3>"
+    );
+
+    // Horizontal rule: ---
+    text = text.replace(
+        /^---$/gm,
+        "<hr>"
+    );
+
+    // Bullet points: - item
+    text = text.replace(
+        /^- (.*)$/gm,
+        "<li>$1</li>"
+    );
+
+    // Group consecutive list items
+    text = text.replace(
+        /(<li>.*?<\/li>(?:\s*<li>.*?<\/li>)*)/gs,
+        "<ul>$1</ul>"
+    );
+
+    // Numbered lists: 1. item
+    text = text.replace(
+        /^\d+\.\s+(.*)$/gm,
+        "<li>$1</li>"
+    );
+
+    // Convert remaining line breaks
+    text = text.replace(
+        /\n/g,
+        "<br>"
+    );
+
+    // Restore links
+    text = text.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+
+    return text;
+}
+
+
+        /* ==============================
+           CHAT STATE
+        ============================== */
+
+        let conversationHistory = [];
+
+        let userScrolledUp = false;
+
+
+        const chatHistory =
+            document.getElementById(
+                "chatHistory"
+            );
+
+
+        function isNearBottom(
+            container,
+            threshold = 100
+        ) {
+
+
+            return (
+
+                container.scrollHeight -
+                container.scrollTop -
+                container.clientHeight
+
+            ) <= threshold;
+
+        }
+
+
+        chatHistory.addEventListener(
+            "scroll",
+            function () {
+
+
+                userScrolledUp =
+                    !isNearBottom(
+                        chatHistory,
+                        100
+                    );
+
+            }
+        );
+
+
+        function scrollChatToBottom(
+            force = false
+        ) {
+
+
+            if (
+                !force &&
+                userScrolledUp
+            ) {
+
+                return;
+
+            }
+
+
+            requestAnimationFrame(
+                () => {
+
+
+                    chatHistory.scrollTo({
+
+                        top:
+                            chatHistory.scrollHeight,
+
+                        behavior:
+                            "smooth"
+
+                    });
+
+                }
+            );
+
+        }
+
+
+        /* ==============================
+           FILE DISPLAY
+        ============================== */
+
+        const documentUpload =
+            document.getElementById(
+                "documentUpload"
+            );
+
+
+        documentUpload.addEventListener(
+            "change",
+            function () {
+
+
+                const selectedFile =
+                    document.getElementById(
+                        "selectedFile"
+                    );
+
+
+                if (
+                    this.files.length > 0
+                ) {
+
+
+                    selectedFile.textContent =
+                        this.files[0].name;
+
+                }
+
+
+                else {
+
+
+                    selectedFile.textContent =
+                        "";
+
+                }
+
+            }
+        );
+
+
+        /* ==============================
+           QUESTION INPUT
+        ============================== */
+
+        const questionBox =
+            document.getElementById(
+                "question"
+            );
+
+
+        questionBox.addEventListener(
+            "input",
+            function () {
+
+
+                this.style.height =
+                    "auto";
+
+
+                this.style.height =
+                    Math.min(
+                        this.scrollHeight,
+                        130
+                    ) + "px";
+
+
+                updatePathwayFromQuestion(
+                    this.value
+                );
+
+            }
+        );
+
+
+        /* ==============================
+           ENTER TO SEND
+        ============================== */
+
+        questionBox.addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key === "Enter" &&
+                    !event.shiftKey
+                ) {
+
+
+                    event.preventDefault();
+
+
+                    askIPSAKTI();
+
+                }
+
+            }
+        );
+
+
+        /* ==============================
+           MAIN IP-SAKTI API FUNCTION
+        ============================== */
+
+        async function askIPSAKTI() {
+
+
+            const question =
+                questionBox.value.trim();
+
+
+            const jurisdiction =
+                document.getElementById(
+                    "jurisdiction"
+                ).value;
+
+
+            const language =
+                document.getElementById(
+                    "language"
+                ).value;
+
+
+            const uploadedFile =
+                documentUpload.files[0];
+
+
+            const sendButton =
+                document.getElementById(
+                    "sendButton"
+                );
+
+
+            if (!question) {
+
+
+                questionBox.focus();
+
+
+                return;
+
+            }
+
+
+            /* Remove welcome message */
+
+            const chatEmpty =
+                document.getElementById(
+                    "chatEmpty"
+                );
+
+
+            if (chatEmpty) {
+
+                chatEmpty.remove();
+
+            }
+
+
+            /*
+             * Follow newest message.
+             */
+
+            userScrolledUp =
+                false;
+
+
+            /* ==============================
+               USER MESSAGE
+            ============================== */
+
+            const userMessage =
+                document.createElement(
+                    "div"
+                );
+
+
+            userMessage.className =
+                "chat-message chat-user";
+
+
+            userMessage.innerHTML =
+
+                '<div class="chat-label">' +
+
+                'You' +
+
+                '</div>' +
+
+                escapeHtml(
+                    question
+                ).replace(
+                    /\n/g,
+                    "<br>"
+                ) +
+
+                '<div class="chat-time">' +
+
+                new Date()
+                    .toLocaleTimeString(
+                        [],
+                        {
+                            hour: "2-digit",
+                            minute: "2-digit"
+                        }
+                    ) +
+
+                '</div>';
+
+
+            chatHistory.appendChild(
+                userMessage
+            );
+
+
+            scrollChatToBottom(
+                true
+            );
+
+
+            /* ==============================
+               LOADING MESSAGE
+            ============================== */
+
+            const loadingMessage =
+                document.createElement(
+                    "div"
+                );
+
+
+            loadingMessage.className =
+                "chat-message chat-ai";
+
+
+            loadingMessage.innerHTML =
+
+                '<div class="chat-label">' +
+
+                'IP-SAKTI' +
+
+                '</div>' +
+
+                'Analysing your question...';
+
+
+            chatHistory.appendChild(
+                loadingMessage
+            );
+
+
+            scrollChatToBottom(
+                true
+            );
+
+
+            sendButton.disabled =
+                true;
+
+
+            /* ==============================
+               FORM DATA
+            ============================== */
+
+            const formData =
+                new FormData();
+
+
+            formData.append(
+                "question",
+                question
+            );
+
+
+            formData.append(
+                "jurisdiction",
+                jurisdiction
+            );
+
+
+            formData.append(
+                "language",
+                language
+            );
+
+
+            formData.append(
+                "conversation_history",
+                JSON.stringify(
+                    conversationHistory
+                )
+            );
+
+
+            if (uploadedFile) {
+
+
+                formData.append(
+                    "document",
+                    uploadedFile
+                );
+
+            }
+
+
+            /* ==============================
+               API REQUEST
+            ============================== */
+
+            try {
+
+
+                const response =
+                    await fetch(
+                        "/api/ask",
+                        {
+                            method: "POST",
+                            body: formData
+                        }
+                    );
+
+
+                let data;
+
+
+                try {
+
+
+                    data =
+                        await response.json();
+
+                }
+
+
+                catch {
+
+
+                    throw new Error(
+                        "The server returned an invalid response."
+                    );
+
+                }
+
+
+                if (!response.ok) {
+
+
+                    throw new Error(
+                        data.detail ||
+                        "Unable to process the question."
+                    );
+
+                }
+
+
+                /* ==============================
+                   DETECTED DOMAINS
+                ============================== */
+
+                const detectedDomains =
+                    document.getElementById(
+                        "detectedDomains"
+                    );
+
+
+                if (
+                    detectedDomains &&
+                    data.detected_domains
+                ) {
+
+
+                    let detectedText =
+                        data.detected_domains.join(
+                            " + "
+                        );
+
+
+                    if (
+                        data.detected_jurisdictions
+                    ) {
+
+
+                        detectedText +=
+                            " • " +
+                            data.detected_jurisdictions.join(
+                                " + "
+                            );
+
+                    }
+
+
+                    detectedDomains.textContent =
+                        detectedText;
+
+                }
+
+
+                /* ==============================
+                   GUIDED PATHWAY
+                ============================== */
+
+                if (
+                    data.detected_domains
+                ) {
+
+
+                    const domains =
+                        data.detected_domains
+                            .join(" ")
+                            .toLowerCase();
+
+
+                    const pathwaySteps =
+                        document.querySelectorAll(
+                            ".pathway-step"
+                        );
+
+
+                    pathwaySteps.forEach(
+                        step => {
+
+                            step.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    pathwaySteps[0]
+                        .classList.add(
+                            "active"
+                        );
+
+
+                    if (
+                        domains.includes(
+                            "ayurveda"
+                        )
+                    ) {
+
+
+                        pathwaySteps[1]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+
+                    if (
+                        domains.includes(
+                            "patent"
+                        )
+                    ) {
+
+
+                        pathwaySteps[2]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+
+                    if (
+                        domains.includes(
+                            "traditional knowledge"
+                        )
+                    ) {
+
+
+                        pathwaySteps[3]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+
+                    if (
+                        domains.includes(
+                            "biodiversity"
+                        )
+                    ) {
+
+
+                        pathwaySteps[4]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+
+                    if (
+                        domains.includes(
+                            "trademark"
+                        )
+                    ) {
+
+
+                        pathwaySteps[5]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+
+                    if (
+                        domains.includes(
+                            "international"
+                        )
+                    ) {
+
+
+                        pathwaySteps[6]
+                            .classList.add(
+                                "active"
+                            );
+
+                    }
+
+                }
+
+
+                /* ==============================
+                   AI RESPONSE
+                ============================== */
+
+                loadingMessage.innerHTML =
+
+                    '<div class="chat-label">' +
+
+                    'IP-SAKTI' +
+
+                    '</div>' +
+
+                    formatAnswer(
+                        data.answer ||
+                        "No answer was returned."
+                    ) +
+
+                    '<div class="chat-time">' +
+
+                    new Date()
+                        .toLocaleTimeString(
+                            [],
+                            {
+                                hour: "2-digit",
+                                minute: "2-digit"
+                            }
+                        ) +
+
+                    '</div>';
+
+
+                /* ==============================
+                   SAVE CONVERSATION
+                ============================== */
+
+                conversationHistory.push({
+
+                    role: "user",
+
+                    content:
+                        question
+
+                });
+
+
+                conversationHistory.push({
+
+                    role: "assistant",
+
+                    content:
+                        data.answer || ""
+
+                });
+
+
+                /* ==============================
+                   CLEAR INPUT
+                ============================== */
+
+                questionBox.value =
+                    "";
+
+
+                questionBox.style.height =
+                    "44px";
+
+
+                documentUpload.value =
+                    "";
+
+
+                document.getElementById(
+                    "selectedFile"
+                ).textContent =
+                    "";
+
+
+                /* ==============================
+                   SHOW LATEST RESPONSE
+                ============================== */
+
+                scrollChatToBottom(
+                    false
+                );
+
+            }
+
+
+            catch (error) {
+
+
+                loadingMessage.innerHTML =
+
+                    '<div class="chat-label">' +
+
+                    'IP-SAKTI' +
+
+                    '</div>' +
+
+                    '<div>' +
+
+                    'Unable to process your request.' +
+
+                    '</div>' +
+
+                    '<br>' +
+
+                    escapeHtml(
+                        error.message
+                    );
+
+
+                scrollChatToBottom(
+                    false
+                );
+
+            }
+
+
+            finally {
+
+
+                sendButton.disabled =
+                    false;
+
+
+                questionBox.focus();
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
